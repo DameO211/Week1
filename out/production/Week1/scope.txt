@@ -1,0 +1,15 @@
+Part1) Model a real life object as a Java class with at least one attribute and an instance method.
+Write a main method to create an instance of the class, assign a value to the attribute, call your method,
+and demonstrate that the value of the attribute changed and that the method successfully completed what
+it was supposed to do. Submit your program as an attached  .java file and post a screen shot to show that
+you have been able to successfully run that program.
+
+Make sure you submission adheres to the SubmissionRequirements document.
+
+
+Part2) Reply to another student's post. Modify the student’s class to add another attribute and a method
+that fits (is consistent with) the object the class is modeling.
+Write main method to demonstrate the correct functionality of the additions.
+Submit a screen shot of the execution of the modified code.
+
+Reply to a post which does not have a reply yet or suggest a different version of the code
