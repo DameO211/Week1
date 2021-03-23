@@ -31,5 +31,10 @@ public class Microwave {
         } else System.out.println("Food is still too cold");
     }
 
-
+    public static class Driver {
+        public static void main(String[] args) {
+            Microwave ge = new Microwave(43,false);
+            ge.cookTimer();
+        }
     }
+}
