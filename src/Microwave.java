@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Microwave {
     //       set boolean
     //    attributes
-    private int timer = 0;
-    private boolean isWarm = false;
+    private int timer;
+    private boolean isWarm;
 
     //    constructor
     public Microwave(int timer, boolean isWarm) {
@@ -19,22 +19,34 @@ public class Microwave {
         this.isWarm = isWarm;
 
     }
+    public int getTimer(){
+        return this.timer;
+    }
+
+    public boolean getIsWarm(){
+
+        System.out.println("Food is warm");
+        return this.isWarm;
+    }
+
+    public void setTimer(int timer) {
+        this.timer = timer;
+    }
+
+    public void setWarm(boolean warm) {
+        isWarm = warm;
+    }
 
     public void cookTimer() {
         Scanner cookTime = new Scanner(System.in);
         timer = cookTime.nextInt();
-
+        setTimer(timer);
 
         if (timer >= 70) {
-            isWarm = true;
+            setWarm(true);
             System.out.println("Food is warm");
         } else System.out.println("Food is still too cold");
     }
 
-    public static class Driver {
-        public static void main(String[] args) {
-            Microwave ge = new Microwave(43,false);
-            ge.cookTimer();
-        }
-    }
+
 }
