@@ -2,6 +2,7 @@
 // Author: Cole, Dameon
 // Course: CMIS 242 7383
 // Date :  03/20/2021
+// Project Desc: A simple program to model a microwave
 // ************************************
 
 import java.util.Scanner;
@@ -9,11 +10,13 @@ import java.util.Scanner;
 public class Microwave {
     //       set boolean
     //    attributes
-    public int timer = 0;
-    public boolean isWarm = false;
+    private int timer = 0;
+    private boolean isWarm = false;
 
     //    constructor
-    public Microwave() {
+    public Microwave(int timer, boolean isWarm) {
+        this.timer = timer;
+        this.isWarm = isWarm;
 
     }
 
@@ -30,8 +33,8 @@ public class Microwave {
 
     public static class Driver {
         public static void main(String[] args) {
-            Microwave GE = new Microwave();
-            GE.cookTimer();
+            Microwave ge = new Microwave(43,false);
+            ge.cookTimer();
         }
     }
 }
